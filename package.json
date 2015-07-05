@@ -1,29 +1,32 @@
 {
   "name": "phreak",
   "version": "1.0.0",
-  "description": "Backbone tests",
+  "description": "Abstractions for the document.stylesheets APIs",
   "main": "index.js",
   "scripts": {
     "rme": "readme package.json > README.md",
+    "deps": "npm-check",
     "start": "beefy js/index.js --live --open --index=html/index.html -- -t babelify -t brfs",
     "test": "mocha"
   },
   "keywords": [
-    "backbone"
+    "css",
+    "web",
+    "api",
+    "browser"
   ],
   "author": "jwomack@netflix.com",
   "license": "ISC",
   "dependencies": {
-    "backbone": "^1.1.2",
-    "in-range": "^1.0.0",
-    "underscore": "^1.8.3"
+    "in-range": "1.0.0"
   },
   "devDependencies": {
-    "babelify": "^6.1.2",
-    "beefy": "^2.1.5",
-    "brfs": "^1.4.0",
-    "browserify": "^10.2.4",
-    "esprima-fb": "^15001.1.0-dev-harmony-fb",
-    "package-json-to-readme": "^1.4.1"
+    "babelify": "6.1.2",
+    "beefy": "2.1.5",
+    "brfs": "1.4.0",
+    "browserify": "10.2.4",
+    "esprima-fb": "15001.1.0-dev-harmony-fb",
+    "npm-check": "3.2.10",
+    "package-json-to-readme": "1.4.1"
   }
 }

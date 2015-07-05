@@ -1,6 +1,6 @@
 # phreak 
 
-Backbone tests
+Abstractions for the document.stylesheets APIs
 
 ## Installation
 
@@ -20,9 +20,7 @@ npm test
 
 ## Dependencies
 
-- [backbone](https://github.com/git+https:/): Give your JS App some Backbone with Models, Views, Collections, and Events.
 - [in-range](https://github.com/sindresorhus/in-range): Check if a number is in a specified range
-- [underscore](https://github.com/jashkenas/underscore): JavaScript&#39;s functional programming helper library.
 
 ## Dev Dependencies
 
@@ -31,6 +29,7 @@ npm test
 - [brfs](https://github.com/substack/brfs): browserify fs.readFileSync() static asset inliner
 - [browserify](https://github.com/substack/node-browserify): browser-side require() the node way
 - [esprima-fb](https://github.com/facebook/esprima): Facebook-specific fork of the esprima project
+- [npm-check](https://github.com/git+https:/): Check for outdated, incorrect, and unused dependencies.
 - [package-json-to-readme](https://github.com/git+https:/): Generate a README.md from package.json contents
 
 
