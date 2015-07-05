@@ -1,0 +1,29 @@
+{
+  "name": "phreak",
+  "version": "1.0.0",
+  "description": "Backbone tests",
+  "main": "index.js",
+  "scripts": {
+    "rme": "readme package.json > README.md",
+    "start": "beefy js/index.js --live --open --index=html/index.html -- -t babelify -t brfs",
+    "test": "mocha"
+  },
+  "keywords": [
+    "backbone"
+  ],
+  "author": "jwomack@netflix.com",
+  "license": "ISC",
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "in-range": "^1.0.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babelify": "^6.1.2",
+    "beefy": "^2.1.5",
+    "brfs": "^1.4.0",
+    "browserify": "^10.2.4",
+    "esprima-fb": "^15001.1.0-dev-harmony-fb",
+    "package-json-to-readme": "^1.4.1"
+  }
+}
