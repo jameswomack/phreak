@@ -1,7 +1,8 @@
 var DaPhreak = Object.create({
   DocumentExtensions : require('./document-extensions'),
-  SheetExtensions    : require('./sheet-extensions'),
-  Rule               : require('./rule')
+  Rule               : require('./rule'),
+  RuleExtensions     : require('./rule-extensions'),
+  SheetExtensions    : require('./sheet-extensions')
 })
 
 module.exports = DaPhreak

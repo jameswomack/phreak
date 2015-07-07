@@ -20,7 +20,10 @@ npm test
 
 ## Dependencies
 
+- [amp-is-undefined](https://github.com/ampersandjs/amp): is-undefined function part of http://amp.ampersandjs.com.
+- [dashify](https://github.com/jonschlinkert/dashify): Convert a camelcase or space-separated string to a dash-separated string.
 - [in-range](https://github.com/sindresorhus/in-range): Check if a number is in a specified range
+- [random-color](https://github.com/azer/random-color): Module to generate random RGB colors
 
 ## Dev Dependencies
 
@@ -29,6 +32,9 @@ npm test
 - [brfs](https://github.com/substack/brfs): browserify fs.readFileSync() static asset inliner
 - [browserify](https://github.com/substack/node-browserify): browser-side require() the node way
 - [esprima-fb](https://github.com/facebook/esprima): Facebook-specific fork of the esprima project
+- [jscs](https://github.com/git+https:/): JavaScript Code Style
+- [jshint](https://github.com/git+https:/): Static analysis tool for JavaScript
+- [jshint-stylish](https://github.com/sindresorhus/jshint-stylish): Stylish reporter for JSHint
 - [npm-check](https://github.com/git+https:/): Check for outdated, incorrect, and unused dependencies.
 - [package-json-to-readme](https://github.com/git+https:/): Generate a README.md from package.json contents
 

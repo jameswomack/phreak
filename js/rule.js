@@ -1,14 +1,20 @@
+var dashify = require('dashify')
+
 function Rule (options) {
+  if (!(this instanceof Rule)) {
+    return new Rule(options)
+  }
+
   this.index = options.index || 0
   this.selector = options.selector
   this.properties = options.properties
 }
 
-var PROP_END = ';\n'
 var SEP = ' : '
 var IMPORTANT = '!important'
 var PROPS_START = ' { \n'
 var PROP_PADDING = '\t'
+var PROP_END = ';\n'
 var PROPS_END = ' } '
 
 // value from prop
@@ -21,8 +27,12 @@ function i (prop) {
   return prop.important ? IMPORTANT : ''
 }
 
+function propString (propName, prop) {
+  return dashify(propName) + SEP + v(prop) + i(prop)
+}
+
 function appended (string, propName, prop) {
-  return string + PROP_PADDING + propName + SEP + v(prop) + i(prop) + PROP_END
+  return string + PROP_PADDING + propString(propName, prop) + PROP_END
 }
 
 function normalized (prop) {

@@ -1,4 +1,5 @@
 var RGBNormalizer = require('./rgb-normalizer')
+var randomColor   = require('random-color')
 
 // Triplets of the Siamese variety
 function triSi (i) {
@@ -15,6 +16,10 @@ var CSSColor = {
     }
 
     return 'rgb(' + triSi(i) + ')'
+  },
+
+  rand: function rand (max) {
+    return randomColor(max)
   }
 }
 
