@@ -1,3 +1,5 @@
+'use strict';
+
 var DaPhreak = Object.create({
   DocumentExtensions : require('./document-extensions'),
   Rule               : require('./rule'),

@@ -1,3 +1,5 @@
+'use strict';
+
 var RuleExtensions = require('./rule-extensions')
 
 var SheetExtensions = Object.create({
@@ -46,8 +48,8 @@ var SheetExtensions = Object.create({
 
   // Self-explanatory ⬇️
   addRuleAtIndex: function addRuleAtIndex (sheet, rule, index) {
-    var _index = sheet.insertRule(rule.toString(), index)
-    return this.indexRule(sheet, rule, _index)
+    var confirmedIndex = sheet.insertRule(rule.toString(), index)
+    return this.indexRule(sheet, rule, confirmedIndex)
   }
 })
 

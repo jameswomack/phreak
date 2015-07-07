@@ -1,3 +1,5 @@
+'use strict';
+
 var isUndefined = require('amp-is-undefined')
 
 var RuleExtensions = Object.create({

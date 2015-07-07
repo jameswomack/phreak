@@ -1,3 +1,5 @@
+'use strict';
+
 var CSSColor = require('./css-color')
 var DaPhreak = require('./da-phreak')
 

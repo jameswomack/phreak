@@ -1,3 +1,5 @@
+'use strict';
+
 var App = require('./app')
 
 document.addEventListener('DOMContentLoaded', function ready (/* event */) {

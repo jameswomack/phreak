@@ -1,3 +1,5 @@
+'use strict';
+
 var STYLE = 'style'
 
 var DocumentExtensions = {

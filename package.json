@@ -6,7 +6,7 @@
   "scripts": {
     "matcher": "./js/*.js",
     "deps": "npm-check",
-    "lint": "jscs $npm_package_scripts_matcher && jshint --reporter=node_modules/jshint-stylish $npm_package_scripts_matcher",
+    "lint": "jscs $npm_package_scripts_matcher && eslint $npm_package_scripts_matcher && jshint --reporter=node_modules/jshint-stylish $npm_package_scripts_matcher",
     "rme": "readme package.json > README.md",
     "start": "beefy js/index.js --live --open --index=html/index.html -- -t babelify -t brfs",
     "test": "mocha --harmony --inline-diffs --recursive"
@@ -34,6 +34,7 @@
     "beefy": "2.1.5",
     "brfs": "1.4.0",
     "browserify": "10.2.4",
+    "eslint": "^0.24.0",
     "esprima-fb": "15001.1.0-dev-harmony-fb",
     "jscs": "jscs-dev/node-jscs",
     "jshint": "2.8.0",

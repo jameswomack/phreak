@@ -1,3 +1,5 @@
+'use strict';
+
 var dashify = require('dashify')
 
 function Rule (options) {
@@ -52,7 +54,9 @@ Rule.prototype = Object.create({
     var props = this.properties
 
     for (var propName in props) {
-      string = appended(string, propName, normalized(props[propName]))
+      if (props.hasOwnProperty(propName)) {
+        string = appended(string, propName, normalized(props[propName]))
+      }
     }
 
     return string + PROPS_END

@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * RGBNormalizer module.
  * @module rgb-normalizer
@@ -24,11 +26,11 @@ function coaxed (colorInt) {
   var coaxedValue = colorInt
 
   switch (colorInt) {
-    case (colorInt < RGBBounds.MIN):
+    case colorInt < RGBBounds.MIN:
       coaxedValue = RGBBounds.MIN
       break
 
-    case (colorInt > RGBBounds.MAX):
+    case colorInt > RGBBounds.MAX:
       coaxedValue = RGBBounds.MAX
       break
 

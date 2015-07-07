@@ -1,3 +1,5 @@
+'use strict';
+
 var RGBNormalizer = require('./rgb-normalizer')
 var randomColor   = require('random-color')
 
