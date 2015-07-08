@@ -4,9 +4,13 @@
   "description": "Abstractions for the document.stylesheets APIs",
   "main": "index.js",
   "scripts": {
-    "matcher": "./js/*.js",
+    "brsfy": "browserify -o test/fixtures/js/index.js js/index.js",
+    "cphtml": "cp html/index.html test/fixtures/html",
     "deps": "npm-check",
+    "_fntest": "nightwatch -c nightwatch.json",
+    "fntest": "npm run brsfy && npm run cphtml && npm run _fntest",
     "lint": "jscs $npm_package_scripts_matcher && eslint $npm_package_scripts_matcher && jshint --reporter=node_modules/jshint-stylish $npm_package_scripts_matcher",
+    "matcher": "./js/*.js",
     "rme": "readme package.json > README.md",
     "start": "beefy js/index.js --live --open --index=html/index.html -- -t babelify -t brfs",
     "test": "mocha --harmony --inline-diffs --recursive"
@@ -27,6 +31,7 @@
     "amp-is-undefined": "1.0.1",
     "dashify": "0.1.0",
     "in-range": "1.0.0",
+    "pepjs": "0.3.0",
     "random-color": "0.0.1"
   },
   "devDependencies": {
@@ -34,12 +39,16 @@
     "beefy": "2.1.5",
     "brfs": "1.4.0",
     "browserify": "10.2.4",
-    "eslint": "^0.24.0",
+    "chromedriver": "2.16.0",
+    "eslint": "0.24.0",
     "esprima-fb": "15001.1.0-dev-harmony-fb",
     "jscs": "jscs-dev/node-jscs",
     "jshint": "2.8.0",
     "jshint-stylish": "2.0.1",
+    "nightwatch": "0.7.6",
+    "node-static": "0.7.6",
     "npm-check": "3.2.10",
-    "package-json-to-readme": "1.4.1"
+    "package-json-to-readme": "1.4.1",
+    "selenium-server-standalone-jar": "2.45.0"
   }
 }

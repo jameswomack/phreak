@@ -6,6 +6,10 @@ var DaPhreak = require('./da-phreak')
 var App = { }
 
 function demo () {
+  // The Pointer Event Polyfill
+  // This was released with a proper build so...
+  require('./vendor/jquery/pep')
+
   var selector = '#da-phreak'
   var sheet = App.sheet = DaPhreak.DocumentExtensions.initStyleSheet(document)
   var rule  = new DaPhreak.Rule({
@@ -18,12 +22,14 @@ function demo () {
   })
   var daPhreakEl = document.querySelector(selector)
 
+  sheet.ownerNode.setAttribute('id', 'phreaky-stylie')
+
   function updateTitleWithSheetStatus (el) {
     var prefix = sheet.disabled ? 'dis' : 'en'
     el.title = 'The stylesheet is ' + prefix + 'abled'
   }
 
-  daPhreakEl.addEventListener('click', function click (event) {
+  daPhreakEl.addEventListener('pointerup', function onPointerUp (event) {
     sheet.disabled = !sheet.disabled
 
     updateTitleWithSheetStatus(event.currentTarget)

@@ -23,6 +23,7 @@ npm test
 - [amp-is-undefined](https://github.com/ampersandjs/amp): is-undefined function part of http://amp.ampersandjs.com.
 - [dashify](https://github.com/jonschlinkert/dashify): Convert a camelcase or space-separated string to a dash-separated string.
 - [in-range](https://github.com/sindresorhus/in-range): Check if a number is in a specified range
+- [pepjs](https://github.com/jquery/PEP): Polyfill of the PointerEvents W3C spec
 - [random-color](https://github.com/azer/random-color): Module to generate random RGB colors
 
 ## Dev Dependencies
@@ -31,12 +32,17 @@ npm test
 - [beefy](https://github.com/chrisdickinson/beefy): local development server that aims to make using browserify fast and fun
 - [brfs](https://github.com/substack/brfs): browserify fs.readFileSync() static asset inliner
 - [browserify](https://github.com/substack/node-browserify): browser-side require() the node way
+- [chromedriver](https://github.com/giggio/node-chromedriver): ChromeDriver for Selenium
+- [eslint](https://github.com/eslint/eslint): An AST-based pattern checker for JavaScript.
 - [esprima-fb](https://github.com/facebook/esprima): Facebook-specific fork of the esprima project
 - [jscs](https://github.com/git+https:/): JavaScript Code Style
 - [jshint](https://github.com/git+https:/): Static analysis tool for JavaScript
 - [jshint-stylish](https://github.com/sindresorhus/jshint-stylish): Stylish reporter for JSHint
+- [nightwatch](https://github.com/nightwatchjs/nightwatch): A node.js bindings implementation for selenium 2.0/webdriver
+- [node-static](https://github.com/cloudhead/node-static): simple, compliant file streaming module for node
 - [npm-check](https://github.com/git+https:/): Check for outdated, incorrect, and unused dependencies.
 - [package-json-to-readme](https://github.com/git+https:/): Generate a README.md from package.json contents
+- [selenium-server-standalone-jar](https://github.com/adamhooper/selenium-server-standalone-jar): A jarfile, so you don&#39;t need to include it in your repository
 
 
 ## License
