@@ -1,17 +1,14 @@
 'use strict';
 
-var RuleExtensions = require('./rule-extensions')
+var RuleExtensions = require('./rule-extensions'),
+    SheetConstants = require('./sheet-constants'),
+    mezclar        = require('./mezclar')
 
-var SheetExtensions = Object.create({
-  DEL_FAIL_NO_REF    : 0x1,
-
-  DEL_FAIL_NOT_FOUND : 0x3,
-
-  DEL_SUCCESS        : 0x5,
-
+var SheetExtensions = Object.create(mezclar({
   // 'push' here means that it's appended to `sheet`, as per `Array`
   pushRule: function pushRule (sheet, rule) {
     var index = sheet.insertRule(rule.toString(), sheet.cssRules.length)
+
     return this.indexRule(sheet, rule, index)
   },
 
@@ -36,6 +33,7 @@ var SheetExtensions = Object.create({
 
   indexRule: function indexRule (sheet, rule, index) {
     var cssStyleRule = sheet.rules.item(index)
+
     RuleExtensions.referToCSSStyleRuleAndIndex(rule, cssStyleRule, index)
     return index
   },
@@ -43,14 +41,16 @@ var SheetExtensions = Object.create({
   // 'add' here means that it's added according to `rule.index`
   addRule: function addRule (sheet, rule) {
     var index = sheet.insertRule.apply(sheet, rule.toArray())
+
     return this.indexRule(sheet, rule, index)
   },
 
   // Self-explanatory ⬇️
   addRuleAtIndex: function addRuleAtIndex (sheet, rule, index) {
     var confirmedIndex = sheet.insertRule(rule.toString(), index)
+
     return this.indexRule(sheet, rule, confirmedIndex)
   }
-})
+}, SheetConstants))
 
 module.exports = SheetExtensions

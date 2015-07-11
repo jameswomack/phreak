@@ -1,0 +1,4 @@
+--require index.js
+--ui bdd
+--reporter spec
+--recursive 
