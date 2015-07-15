@@ -21,10 +21,17 @@ npm test
 ## Dependencies
 
 - [amp-is-undefined](https://github.com/ampersandjs/amp): is-undefined function part of http://amp.ampersandjs.com.
+- [bulk-require](https://github.com/substack/bulk-require): require a whole directory of trees in bulk
 - [dashify](https://github.com/jonschlinkert/dashify): Convert a camelcase or space-separated string to a dash-separated string.
+- [deep-freeze](https://github.com/substack/deep-freeze): recursively Object.freeze() objects and functions
+- [document-register-element](https://github.com/WebReflection/document-register-element): A stand-alone working lightweight version of the W3C Custom Elements specification
 - [in-range](https://github.com/sindresorhus/in-range): Check if a number is in a specified range
+- [keykey](https://github.com/git+https:/): Create a key&lt;-&gt;value mirror. Useful for contants. Inspired by keymirror in Flux.
 - [pepjs](https://github.com/jquery/PEP): Polyfill of the PointerEvents W3C spec
+- [presuf](https://github.com/git+https:/): Transform a collection with a prefix or suffix
 - [random-color](https://github.com/azer/random-color): Module to generate random RGB colors
+- [react](https://github.com/git+https:/): React is a JavaScript library for building user interfaces.
+- [reactive-elements](https://github.com/git+https:/): Allows to use React.js component as custom element
 
 ## Dev Dependencies
 
@@ -32,17 +39,25 @@ npm test
 - [beefy](https://github.com/chrisdickinson/beefy): local development server that aims to make using browserify fast and fun
 - [brfs](https://github.com/substack/brfs): browserify fs.readFileSync() static asset inliner
 - [browserify](https://github.com/substack/node-browserify): browser-side require() the node way
+- [bulkify](https://github.com/substack/bulkify): transform inline bulk-require calls into statically resolvable require maps
+- [chai](https://github.com/git+https:/): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 - [chromedriver](https://github.com/giggio/node-chromedriver): ChromeDriver for Selenium
-- [eslint](https://github.com/eslint/eslint): An AST-based pattern checker for JavaScript.
+- [eslint](https://github.com/git+https:/): An AST-based pattern checker for JavaScript.
+- [eslint-plugin-react](https://github.com/git+https:/): React specific linting rules for ESLint
 - [esprima-fb](https://github.com/facebook/esprima): Facebook-specific fork of the esprima project
 - [jscs](https://github.com/git+https:/): JavaScript Code Style
+- [jscs-jsdoc](https://github.com/git+https:/): JSCS jsdoc plugin
 - [jshint](https://github.com/git+https:/): Static analysis tool for JavaScript
 - [jshint-stylish](https://github.com/sindresorhus/jshint-stylish): Stylish reporter for JSHint
+- [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
 - [nightwatch](https://github.com/nightwatchjs/nightwatch): A node.js bindings implementation for selenium 2.0/webdriver
 - [node-static](https://github.com/cloudhead/node-static): simple, compliant file streaming module for node
 - [npm-check](https://github.com/git+https:/): Check for outdated, incorrect, and unused dependencies.
 - [package-json-to-readme](https://github.com/git+https:/): Generate a README.md from package.json contents
+- [rewire](https://github.com/jhnns/rewire): Easy dependency injection for node.js unit testing
 - [selenium-server-standalone-jar](https://github.com/adamhooper/selenium-server-standalone-jar): A jarfile, so you don&#39;t need to include it in your repository
+- [sinon](https://github.com/cjohansen/Sinon.JS): JavaScript test spies, stubs and mocks.
+- [sinon-chai](https://github.com/git+https:/): Extends Chai with assertions for the Sinon.JS mocking framework.
 
 
 ## License
