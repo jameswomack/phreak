@@ -70,6 +70,14 @@ var App = {
     require('document-register-element')
 
     this.doc.registerAndInsertElement(require('./elements/neon-header'), 'hgroup')
+
+    // https://github.com/PixelsCommander/ReactiveElements
+    // Adds `document.registerReact`
+    require('reactive-elements')
+
+    this.doc.registerAndInsertComponent(require('./components/character.jsx'), 'section', {
+      characterName: 'Crazy Eyes'
+    })
   },
 
   start : function start () {

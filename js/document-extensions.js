@@ -31,9 +31,17 @@ var DocumentExtensions = {
     return array
   },
 
+  createElement   : function (doc, nodeName) {
+    return doc.createElement(nodeName)
+  },
+
+  queryForParent: function (doc, parentSel) {
+    return parentSel ? this.query(doc, parentSel)[0] : doc.body
+  },
+
   insertElement   : function insertElement (doc, nodeName, parentSel) {
-    var parent = parentSel ? this.query(doc, parentSel)[0] : doc.body,
-        el     = doc.createElement(nodeName)
+    var parent = this.queryForParent(doc, parentSel),
+        el = this.createElement(doc, nodeName)
 
     parent.appendChild(el)
 
@@ -44,6 +52,18 @@ var DocumentExtensions = {
     var Element = this.registerElement(doc, element)
 
     return this.insertElement(doc, Element.name, parentSel)
+  },
+
+  registerAndInsertComponent: function (doc, Component, parentSel, props) {
+    document.registerReact(Component.displayName, Component)
+
+    var el = this.createElement(doc, Component.displayName)
+
+    props && (el.setProps(props))
+
+    this.queryForParent(doc, parentSel).appendChild(el)
+
+    return this.insertElement(doc, Component.displayName, parentSel)
   },
 
   registerElement : function registerElement (doc, element) {

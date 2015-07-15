@@ -58,9 +58,5 @@
   "validateNewlineAfterArrayElements": true,
   "validateIndentation": 2,
   "validateParameterSeparator": ", ",
-  "validateQuoteMarks": "'",
-  "validateJSDoc": {
-    "checkParamNames": true,
-    "requireParamTypes": true
-  }
+  "validateQuoteMarks": "'"
 }

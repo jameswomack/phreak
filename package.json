@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Abstractions for the document.stylesheets APIs",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/jameswomack/phreak.git"
+  },
   "scripts": {
     "brsfy": "browserify -o test/fixtures/js/index.js js/index.js",
     "cphtml": "cp html/index.html test/fixtures/html",
@@ -12,7 +15,7 @@
     "lint": "jscs $npm_package_scripts_matcher && eslint $npm_package_scripts_matcher && jshint --reporter=node_modules/jshint-stylish $npm_package_scripts_matcher",
     "matcher": "./js/*.js",
     "rme": "readme package.json > README.md",
-    "start": "beefy js/index.js --live --open --index=html/index.html -- -t brfs -t babelify",
+    "start": "beefy js/index.js --live --open --index=html/index.html -- -t babelify -t brfs",
     "test": "mocha --harmony --inline-diffs --recursive -R ./test/unit/index.js --opts ./test/unit/mocha.opts ./test/unit/specs/**/.js"
   },
   "keywords": [
@@ -37,7 +40,9 @@
     "keykey": "^1.0.0",
     "pepjs": "0.3.0",
     "presuf": "^1.0.0",
-    "random-color": "0.0.1"
+    "random-color": "0.0.1",
+    "react": "^0.13.3",
+    "reactive-elements": "^0.4.9"
   },
   "devDependencies": {
     "babelify": "6.1.2",
@@ -47,9 +52,11 @@
     "bulkify": "^1.0.2",
     "chai": "^3.0.0",
     "chromedriver": "2.16.0",
-    "eslint": "0.24.0",
+    "eslint": "^0.24.1",
+    "eslint-plugin-react": "^2.7.0",
     "esprima-fb": "15001.1.0-dev-harmony-fb",
     "jscs": "jscs-dev/node-jscs",
+    "jscs-jsdoc": "^1.1.0",
     "jshint": "2.8.0",
     "jshint-stylish": "2.0.1",
     "mocha": "^2.2.5",
