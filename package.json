@@ -32,7 +32,7 @@
   "license": "ISC",
   "dependencies": {
     "amp-is-undefined": "1.0.1",
-    "bulk-require": "^0.2.1",
+    "bulk-require": "^1.0.1",
     "dashify": "0.1.0",
     "deep-freeze": "0.0.1",
     "document-register-element": "^0.4.5",
@@ -41,7 +41,7 @@
     "pepjs": "0.3.0",
     "presuf": "^1.0.0",
     "random-color": "0.0.1",
-    "react": "^0.13.3",
+    "react": "^0.14.0",
     "reactive-elements": "^0.4.9"
   },
   "devDependencies": {
