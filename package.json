@@ -41,7 +41,7 @@
     "pepjs": "0.3.0",
     "presuf": "^1.0.0",
     "random-color": "0.0.1",
-    "react": "^0.13.3",
+    "react": "^15.0.0",
     "reactive-elements": "^0.4.9"
   },
   "devDependencies": {
